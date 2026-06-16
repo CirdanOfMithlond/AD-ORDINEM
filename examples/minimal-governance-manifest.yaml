@@ -1,1 +1,27 @@
-
+apiVersion: ad-ordinem.io/v0alpha1
+kind: GovernanceManifest
+metadata:
+  name: minimal-governance-manifest
+  status: draft
+spec:
+  governanceModel:
+    authorityPlane: "external"
+    runtimeMutation: "declared-only"
+    rollbackSemantics: "required"
+    evidenceGeneration: "required"
+  declaredSurfaces:
+    - name: "namespace"
+      type: "kubernetes"
+      changePolicy: "versioned"
+    - name: "runtime-envelope"
+      type: "linux"
+      changePolicy: "reviewed"
+  validation:
+    requireIntent: true
+    requireEvidence: true
+    requireRollbackReference: true
+  security:
+    secretsIncluded: false
+    privilegedOperationsIncluded: false
+    productionReady: false
+  note: "Minimal public example for specification review only."
