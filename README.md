@@ -2,25 +2,15 @@
 
 AD-ORDINEM is a public technical specification and reference architecture for deterministic governance of Kubernetes and Linux infrastructure.
 
-The project addresses a recurring problem in modern platform engineering: infrastructure change is often executed through fragmented controllers, scripts, templates, GitOps layers, and operational procedures that make intent, mutation, rollback, evidence, and accountability difficult to reconstruct as one coherent governance path.
+The project addresses a recurring problem in modern platform engineering: infrastructure change is often executed through fragmented controllers, scripts, templates, CI/CD layers, GitOps patterns, and manual procedures that make intent, mutation, rollback, evidence, and accountability difficult to reconstruct as one coherent governance path.
 
 AD-ORDINEM proposes an External Governance Model in which structural authority is kept outside the runtime plane and expressed through versioned governance artifacts, change-coupled evidence, deterministic rollback semantics, and inspectable operational records.
 
 ## Public Repository Scope
 
-This repository publishes the public, non-sensitive specification layer of AD-ORDINEM.
+This repository publishes the public specification layer of AD-ORDINEM.
 
-It currently includes:
-
-- architectural concepts;
-- governance model definitions;
-- non-sensitive reference examples;
-- draft governance manifests;
-- change-record structures;
-- security and threat-modeling notes;
-- public roadmap material.
-
-The private reference implementation, production logic, privileged automation, deployment procedures, internal scripts, and confidential implementation material are not included at this stage.
+It currently includes architecture notes, governance model definitions, reference examples, draft governance manifests, change-record structures, public review notes, roadmap material, and contribution guidance.
 
 ## Core Concepts
 
@@ -40,25 +30,37 @@ AD-ORDINEM aims to make these concerns explicit, deterministic, reviewable, and 
 
 Status: early public specification.
 
-The repository is intentionally limited to public, non-sensitive materials while the reference implementation is being prepared. The public layer is intended to make the architecture reviewable and discussable without exposing premature or sensitive implementation details.
+The public layer is intended to make the architecture reviewable and discussable while further work is prepared.
 
 ## Repository Contents
 
+- `OPENAI-CODEX-OSS-APPLICATION.md`: application-oriented project brief.
+- `REVIEWER_GUIDE.md`: fast review path for evaluators.
+- `docs/project-brief.md`: concise project brief.
+- `docs/quick-brief.md`: short reviewer summary.
+- `docs/use-cases.md`: public use cases.
 - `docs/architecture-overview.md`: public architecture overview.
-- `docs/non-goals.md`: explicit exclusions and scope limits.
 - `docs/public-whitepaper-summary.md`: public summary of the technical white paper.
+- `docs/publication-boundary.md`: repository publication scope.
+- `docs/non-goals.md`: explicit exclusions and scope limits.
+- `docs/threat-model.md`: public review notes.
+- `docs/governance-artifact-schema.md`: artifact structure notes.
+- `examples/README.md`: examples directory guide.
 - `examples/change-record.yaml`: illustrative change-record artifact.
 - `examples/minimal-governance-manifest.yaml`: illustrative governance manifest.
+- `schemas/README.md`: schema roadmap.
 - `SECURITY.md`: security scope and reporting policy.
 - `ROADMAP.md`: staged public roadmap.
 - `CONTRIBUTING.md`: contribution boundaries and review standard.
+- `MAINTAINERS.md`: maintainer information.
+- `CHANGELOG.md`: public specification change log.
+- `NOTICE`: project notice and license boundary.
 
 ## Planned Work
 
-- publish additional non-sensitive governance examples;
+- publish additional public governance examples;
 - define validation rules for governance artifacts;
 - define rollback and evidence-pack structures;
-- add security and threat-modeling material;
 - add documentation consistency checks;
 - progressively convert the public specification into usable implementation-neutral open-source assets.
 
