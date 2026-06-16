@@ -1,0 +1,23 @@
+schema: ad-ordinem-change-record
+version: v0alpha1
+kind: ChangeRecord
+required:
+  - apiVersion
+  - kind
+  - metadata
+  - spec
+metadata:
+  required:
+    - id
+    - name
+    - status
+spec:
+  required:
+    - declaredIntent
+    - scope
+    - governance
+    - evidence
+    - rollback
+notes:
+  status: illustrative
+  productionReady: false
