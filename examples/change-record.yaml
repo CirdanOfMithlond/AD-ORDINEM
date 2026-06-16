@@ -1,1 +1,33 @@
-
+apiVersion: ad-ordinem.io/v0alpha1
+kind: ChangeRecord
+metadata:
+  id: change-0001
+  name: example-governance-change
+  status: draft
+spec:
+  declaredIntent:
+    summary: "Illustrative change record for deterministic infrastructure governance."
+    rationale: "Demonstrates how infrastructure mutation can be framed as an explicit, reviewable, and reversible event."
+  scope:
+    environment: "example"
+    namespace: "example-namespace"
+    affectedSurfaces:
+      - "kubernetes-manifest"
+      - "governance-record"
+  governance:
+    author: "maintainer"
+    reviewRequired: true
+    evidenceRequired: true
+    rollbackRequired: true
+  evidence:
+    expectedArtifacts:
+      - "pre-change-state"
+      - "declared-delta"
+      - "post-change-state"
+      - "rollback-reference"
+  rollback:
+    strategy: "restore-declared-prior-state"
+    checkpointRef: "checkpoint-example-0001"
+  safety:
+    productionReady: false
+    note: "Illustrative structure only; not a production automation artifact."
