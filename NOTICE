@@ -1,0 +1,10 @@
+AD-ORDINEM
+Copyright 2026 Luca Arrighi
+
+This repository publishes the public specification layer of AD-ORDINEM.
+
+Code examples, schemas, and public reference artifacts are licensed under the Apache License, Version 2.0.
+
+Specification text, documentation, terminology, architectural descriptions, and white-paper-derived material are copyright Luca Arrighi unless expressly stated otherwise.
+
+The repository does not publish the private reference implementation or deployment-specific internal logic.
