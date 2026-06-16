@@ -1,0 +1,14 @@
+apiVersion: ad-ordinem.io/v0alpha1
+kind: ReviewReference
+metadata:
+  id: review-reference-0001
+  name: example-review-reference
+  status: draft
+spec:
+  changeRecordRef: change-0001
+  targetStateRef: prior-state-note
+  strategy: declared-prior-state-reference
+  reviewRequired: true
+  notes:
+    - "Illustrative review reference for public review."
+    - "Not intended as an executable artifact."
