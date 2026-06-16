@@ -1,0 +1,25 @@
+apiVersion: ad-ordinem.io/v0alpha1
+kind: EvidencePack
+metadata:
+  id: evidence-pack-0001
+  name: example-evidence-pack
+  status: draft
+spec:
+  changeRecordRef: change-0001
+  summary: "Illustrative evidence package for a declared change."
+  artifacts:
+    - name: prior-state-note
+      type: text-reference
+      required: true
+    - name: declared-delta-note
+      type: text-reference
+      required: true
+    - name: resulting-state-note
+      type: text-reference
+      required: true
+  review:
+    reviewer: maintainer
+    status: pending
+  safety:
+    productionReady: false
+    note: "Illustrative structure only."
