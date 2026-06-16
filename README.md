@@ -1,5 +1,15 @@
 # AD-ORDINEM
 
+## Reviewer Note — OpenAI OSS Support Request
+
+AD-ORDINEM is presented as an early public specification and reference architecture, not as a completed production system.
+
+The repository exists to make the architecture reviewable while the full technical white paper, additional examples, validation notes, and safe publication boundary are completed.
+
+The support request is directed to that public work: completing the white paper, converting preparatory implementation work into reviewable documentation and examples, expanding validation material, and preparing safe implementation-neutral open-source assets.
+
+For the reviewer-facing status note, see `docs/openai-oss-reviewer-note.md`.
+
 AD-ORDINEM is a public technical specification and reference architecture for deterministic governance of Kubernetes and Linux infrastructure.
 
 The project addresses a recurring problem in modern platform engineering: infrastructure change is often executed through fragmented controllers, scripts, templates, CI/CD layers, GitOps patterns, and manual procedures that make intent, mutation, rollback, evidence, and accountability difficult to reconstruct as one coherent governance path.
@@ -11,6 +21,8 @@ AD-ORDINEM proposes an External Governance Model in which structural authority i
 This repository publishes the public specification layer of AD-ORDINEM.
 
 It currently includes architecture notes, governance model definitions, reference examples, draft governance manifests, change-record structures, public review notes, roadmap material, and contribution guidance.
+
+Associated implementation work is being prepared separately and is not represented as production-ready public software until it has been reviewed, reduced to non-sensitive components, documented, and aligned with the public specification.
 
 ## Core Concepts
 
@@ -32,10 +44,13 @@ Status: early public specification.
 
 The public layer is intended to make the architecture reviewable and discussable while further work is prepared.
 
+Immediate support would be used during the first two months to complete the technical white paper for public presentation, improve repository-level documentation, expand examples, define validation expectations, and prepare safe implementation-neutral assets for later public review.
+
 ## Repository Contents
 
 - `OPENAI-CODEX-OSS-APPLICATION.md`: application-oriented project brief.
 - `REVIEWER_GUIDE.md`: fast review path for evaluators.
+- `docs/openai-oss-reviewer-note.md`: reviewer-facing status note for the support request.
 - `docs/project-brief.md`: concise project brief.
 - `docs/quick-brief.md`: short reviewer summary.
 - `docs/use-cases.md`: public use cases.
@@ -58,6 +73,7 @@ The public layer is intended to make the architecture reviewable and discussable
 
 ## Planned Work
 
+- complete the technical white paper for public presentation;
 - publish additional public governance examples;
 - define validation rules for governance artifacts;
 - define rollback and evidence-pack structures;
