@@ -1,0 +1,20 @@
+schema: ad-ordinem-governance-manifest
+version: v0alpha1
+kind: GovernanceManifest
+required:
+  - apiVersion
+  - kind
+  - metadata
+  - spec
+metadata:
+  required:
+    - name
+    - status
+spec:
+  required:
+    - governanceModel
+    - declaredSurfaces
+    - validation
+notes:
+  status: illustrative
+  productionReady: false
