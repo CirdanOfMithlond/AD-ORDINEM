@@ -98,4 +98,4 @@ Specification text, documentation, terminology, architectural descriptions, and 
 
 ## Maintainer
 
-This repository is maintained by Luca Arrighi as the primary maintainer of the AD-ORDINEM architecture.
+This repository is maintained by Cirdan as the primary maintainer of the AD-ORDINEM architecture.
