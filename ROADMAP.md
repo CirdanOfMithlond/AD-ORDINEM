@@ -2,6 +2,20 @@
 
 AD-ORDINEM is currently in early public specification stage. The roadmap below describes the intended progression from public specification material to reviewable, implementation-neutral open-source assets.
 
+## Immediate Work Window: First Two Months
+
+The immediate work window focuses on converting existing architecture and preparatory implementation material into clearer public review assets.
+
+Primary outputs:
+
+- complete the technical white paper for public presentation;
+- improve repository structure and reviewer guidance;
+- expand public governance-manifest examples;
+- expand public change-record examples;
+- define validation expectations for public artifacts;
+- prepare safe implementation-neutral examples;
+- document the boundary between public specification material and material not yet ready for publication.
+
 ## Phase 0: Public Specification Stabilization
 
 - publish a clean repository-level README;
